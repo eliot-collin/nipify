@@ -1,6 +1,6 @@
 import puppy
 
-proc getCurrentIp(url: string): string =
+proc sendRequest(url: string): string =
   let response = get(url)
   return response.body
 
@@ -12,4 +12,4 @@ proc getIp*(isIpv6: bool, isJson: bool): string =
   if isJson:
     ipifyUrl &= "?format=json"
 
-  return getCurrentIp(ipifyUrl)
+  return sendRequest(ipifyUrl)
