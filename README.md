@@ -1,9 +1,13 @@
 # nipify
 nim library for [ipify](https://ipify.org)
 
-to use it you simply need to provide if you want it to use ipv6 and or use json
+here's how to use it:
 ```nim
 import nipify
 
-echo getIp(false, true)
+# uses ipv6 by default
+echo getIp()
+
+# to use ipv4
+echo getIp(false)
 ```
