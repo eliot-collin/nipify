@@ -2,7 +2,7 @@
 
 version       = "0.2.0"
 author        = "eliot-collin"
-description   = "library for ipify.org"
+description   = "library for ipify"
 license       = "MIT"
 srcDir        = "src"
 
